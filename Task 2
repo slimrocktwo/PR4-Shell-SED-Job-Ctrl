@@ -1,0 +1,7 @@
+/bin/links &
+kill -STOP %1
+(sleep 60; sleep 60; ls -aLR/> flist &)
+fg %1
+kill -STOP %1
+kill %1
+jobs
