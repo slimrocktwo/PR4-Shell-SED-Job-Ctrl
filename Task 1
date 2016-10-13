@@ -1,0 +1,14 @@
+echo 'if [ -f ~/.bashrc ]; then' >> .bash_profile
+echo '        . ~/.bashrc' >> .bash_profile
+echo 'fi' >> .bash_profile
+echo 'GREEN="\[$(tput setaf 2)\]"' >> .bash_profile
+echo 'RESET="\[$(tput sgr0)\]" '>> .bash_profile
+echo 'export PS1="${GREEN}\w - \$ ${RESET}"' >> .bash_profile
+echo 'PATH=$PATH:$HOME/.local/bin:$HOME/bin:.' >> .bash_profile
+echo 'export PATH' >> .bash_profile
+echo "alias dir=ls' '-l" >> .bash_profile
+echo "alias cls='clear'" >> .bash_profile
+echo 'alias rm=rm" "-i' >> .bash_profile
+echo 'set -o noclobber' >> .bash_profile
+echo 'setterm -bold on' >> .bash_profile
+echo 'w' >> .bash_profile
